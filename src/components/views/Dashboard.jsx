@@ -1,11 +1,11 @@
+import About from "./sections/About";
+import Projects from "./sections/Projects";
 
 function Dashboard() {
- 
   return (
     <>
-      <div className="about">
-        <p>Marco Pereira da Silva</p>
-      </div>
+      <About />
+      <Projects />
     </>
   );
 }

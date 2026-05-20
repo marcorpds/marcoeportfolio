@@ -10,6 +10,7 @@ div.navbar {
     background-color: #dcc48e;
     width: 5px;
     height: 250px;
+    border-radius: 10px;
   }
 
   nav {
@@ -32,9 +33,11 @@ div.navbar {
       text-decoration: none;
       display: block;
       width: 100px;
-      padding: 10px 20px;
+      padding: 8px 15px;
       margin: 10px;
-      border-radius: 10px;
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
     }
   }
 
@@ -42,5 +45,6 @@ div.navbar {
     background-color: #dcc48e;
     width: 5px;
     height: 250px;
+    border-radius: 10px;
   }
 }

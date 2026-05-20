@@ -10,6 +10,7 @@ div.Informationbar {
     background-color: #dcc48e;
     width: 5px;
     height: 150px;
+    border-radius: 10px;
   }
 
   .menu {
@@ -17,6 +18,7 @@ div.Informationbar {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 30px;
     color: #dcc48e;
   }
@@ -25,5 +27,6 @@ div.Informationbar {
     background-color: #dcc48e;
     width: 5px;
     height: 150px;
+    border-radius: 10px;
   }
 }
