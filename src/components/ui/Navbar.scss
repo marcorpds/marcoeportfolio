@@ -1,0 +1,46 @@
+div.navbar {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  height: 100vh;
+  align-items: center;
+  gap: 30px;
+
+  .topLine {
+    background-color: #dcc48e;
+    width: 5px;
+    height: 250px;
+  }
+
+  nav {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    div.navItem .active {
+      background: #dcc48e;
+      color: black;
+    }
+
+    div.navItem :hover {
+      background: #6a6a6a;
+    }
+
+    div.navItem a {
+      color: #dcc48e;
+      text-decoration: none;
+      display: block;
+      width: 100px;
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+  }
+
+  .bottomLine {
+    background-color: #dcc48e;
+    width: 5px;
+    height: 250px;
+  }
+}

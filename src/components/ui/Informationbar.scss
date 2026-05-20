@@ -1,0 +1,29 @@
+div.Informationbar {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  height: 100vh;
+  align-items: center;
+  gap: 30px;
+
+  .topLine {
+    background-color: #dcc48e;
+    width: 5px;
+    height: 150px;
+  }
+
+  .menu {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    color: #dcc48e;
+  }
+
+  .bottomLine {
+    background-color: #dcc48e;
+    width: 5px;
+    height: 150px;
+  }
+}
