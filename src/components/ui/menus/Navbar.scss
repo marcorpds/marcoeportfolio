@@ -1,7 +1,10 @@
 div.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
-  min-width: 200px;
+  width: 200px;
   height: 100vh;
   align-items: center;
   gap: 30px;
@@ -38,6 +41,7 @@ div.navbar {
       border-radius: 50px;
       display: flex;
       justify-content: center;
+      transition: 0.2s ease;
     }
   }
 

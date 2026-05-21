@@ -1,32 +1,88 @@
 div.Informationbar {
+  position: fixed;
+  top: 0;
+  right: 0;
   display: flex;
   flex-direction: column;
-  min-width: 200px;
-  height: 100vh;
   align-items: center;
+  width: 200px;
+  height: 100vh;
   gap: 30px;
 
-  .topLine {
+  // Top and Bottom Lines
+  .topLine,
+  .bottomLine {
     background-color: #dcc48e;
     width: 5px;
     height: 150px;
     border-radius: 10px;
   }
 
+  // Menu Container
   .menu {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    color: #dcc48e;
-  }
+    gap: 20px;
 
-  .bottomLine {
-    background-color: #dcc48e;
-    width: 5px;
-    height: 150px;
-    border-radius: 10px;
+    // Shared Style for ALL Social Icons
+    .socialIcon a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .socialIcon img {
+      width: 32px;
+      height: 32px;
+      transition: all 0.3s ease;
+    }
+
+    // Hover Animation
+    .socialIcon a:hover {
+      transform: translateY(-5px) scale(1.05);
+      background-color: rgba(220, 196, 142, 0.12);
+      box-shadow: 0 0 13px rgba(220, 196, 142, 0.3);
+    }
+
+    // Icon grows on hover
+    .socialIcon a:hover img {
+      transform: scale(1.05);
+    }
+
+    // Hover Icon Swaps
+    .linkedin a:hover img {
+      content: url("../assets/icons/linkedin/linkedin-svgrepo-comb1.svg");
+    }
+
+    .github a:hover img {
+      content: url("../assets/icons/github/github-svgrepo-comb1.svg");
+    }
+
+    .codepen a:hover img {
+      content: url("../assets/icons/codepen/codepen-svgrepo-comb1.svg");
+    }
+
+    .instagram a:hover img {
+      content: url("../assets/icons/instagram/instagram-svgrepo-comb1.svg");
+    }
+
+    .facebook a:hover img {
+      content: url("../assets/icons/facebook/facebook-svgrepo-comb1.svg");
+    }
+
+    .youtube a:hover img {
+      content: url("../assets/icons/youtube/youtube-svgrepo-comb1.svg");
+    }
+
+    .email a:hover img {
+      content: url("../assets/icons/email/email-svgrepo-comb1.svg");
+    }
   }
 }

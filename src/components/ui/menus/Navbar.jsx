@@ -16,6 +16,9 @@ function Navbar() {
           <div className="navItem">
             <NavLink to="/marcoeportfolio/certificates">Certificates</NavLink>
           </div>
+          <div className="navItem">
+            <NavLink to="/marcoeportfolio/experience">Experience</NavLink>
+          </div>
         </nav>
         <div className="bottomLine" />
       </div>

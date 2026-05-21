@@ -1,10 +1,23 @@
 import "./Projects.scss";
+import ProjectCard from "../../entity/projects/ProjectCard.jsx";
+import { CardContainer } from "../../ui/assets/Card.jsx";
 
 function Projects() {
   return (
     <>
       <div className="projects">
-        <div className="section">Projects</div>
+        <div className="sectionTitle">Projects</div>
+        <div className="projectsDisplay">
+          <CardContainer>
+            <ProjectCard>
+              <p>Project 1</p>
+            </ProjectCard>
+            <ProjectCard />
+          </CardContainer>
+          <div className="allProjectsButton">
+            <a href="/marcoeportfolio/projects">All Projects</a>
+          </div>
+        </div>
       </div>
     </>
   );

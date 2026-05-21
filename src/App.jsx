@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PageNotFound from "./components/views/PageNotFound";
 import Dashboard from "./components/views/Dashboard";
-import Layout from "./components/ui/Layout"
+import Layout from "./components/ui/menus/Layout"
 
 function App() {
   return (

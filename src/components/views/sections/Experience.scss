@@ -1,4 +1,4 @@
-div.certificates {
+div.experience {
   text-align: center;
   margin-top: 150px;
 
@@ -7,18 +7,18 @@ div.certificates {
     font-size: 30px;
   }
 
-  .certificatesDisplay {
+  .experienceDisplay {
     margin-top: 40px;
   }
 }
 
-.allCertificatesButton {
+.allExperienceButton {
   margin-top: 30px;
   display: flex;
   justify-content: center;
 }
 
-.allCertificatesButton a {
+.allExperienceButton a {
   color: #c0c0c0;
   text-decoration: none;
 
@@ -34,6 +34,6 @@ div.certificates {
   transition: 0.2s ease;
 }
 
-.allCertificatesButton a:hover {
+.allExperienceButton a:hover {
   background: #6a6a6a;
 }
