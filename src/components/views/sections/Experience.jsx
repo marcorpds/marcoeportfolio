@@ -1,6 +1,6 @@
 import "./Experience.scss";
 import ExperienceCard from "../../entity/experience/ExperienceCard.jsx";
-import { CardContainer } from "../../ui/assets/Card.jsx";
+import { CardContainer } from "../../ui/assets/ui/Card.jsx";
 
 function Experience() {
   return (
@@ -9,8 +9,9 @@ function Experience() {
         <div className="sectionTitle">Experience</div>
         <div className="experienceDisplay">
           <CardContainer>
-            <ExperienceCard />
-            <ExperienceCard />
+            <ExperienceCard>Experience 1</ExperienceCard>
+            <ExperienceCard>Experience 2</ExperienceCard>
+            <ExperienceCard>Experience 3</ExperienceCard>
           </CardContainer>
           <div className="allExperienceButton">
             <a href="/marcoeportfolio/experience">Download CV</a>

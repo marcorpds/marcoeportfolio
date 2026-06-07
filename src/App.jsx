@@ -8,7 +8,7 @@ function App() {
     <BrowserRouter>
       <Layout>
         <Routes>
-          <Route path="/marcoeportfolio/dashboard" element={<Dashboard />} />
+          <Route path="/marcoeportfolio/" element={<Dashboard />} />
           <Route path="/marcoeportfolio/*" element={<PageNotFound />} />
         </Routes>
       </Layout>

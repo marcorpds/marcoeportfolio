@@ -8,7 +8,7 @@ function Navbar() {
         <div className="topLine" />
         <nav>
           <div className="navItem">
-            <NavLink to="/marcoeportfolio/dashboard">Dashboard</NavLink>
+            <NavLink to="/marcoeportfolio/dashboard">About</NavLink>
           </div>
           <div className="navItem">
             <NavLink to="/marcoeportfolio/projects">Projects</NavLink>

@@ -46,7 +46,7 @@ div.Informationbar {
 
     // Hover Animation
     .socialIcon a:hover {
-      transform: translateY(-5px) scale(1.05);
+      transform: translateY(-2px) scale(1.05);
       background-color: rgba(220, 196, 142, 0.12);
       box-shadow: 0 0 13px rgba(220, 196, 142, 0.3);
     }
@@ -58,6 +58,7 @@ div.Informationbar {
 
     // Hover Icon Swaps
     .linkedin a:hover img {
+      
       content: url("../assets/icons/linkedin/linkedin-svgrepo-comb1.svg");
     }
 

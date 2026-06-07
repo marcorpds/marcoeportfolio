@@ -1,12 +1,12 @@
 import "./ExperienceCard.scss";
-import { Card } from "../../ui/assets/Card.jsx";
+import { Card } from "../../ui/assets/ui/Card.jsx";
 
-function ExperienceCard() {
+function ExperienceCard({ children }) {
   return (
     <>
-      <div className="experienceCard">
-        <Card />
-      </div>
+      <Card>
+        <div className="experienceCard">{children}</div>
+      </Card>
     </>
   );
 }

@@ -1,12 +1,12 @@
 import "./ProjectCard.scss";
-import { Card } from "../../ui/assets/Card.jsx";
+import { Card } from "../../ui/assets/ui/Card.jsx";
 
-function ProjectCard() {
+function ProjectCard({ children }) {
   return (
     <>
-      <div className="projectCard">
-        <Card />
-      </div>
+      <Card>
+        <div className="projectCard">{children}</div>
+      </Card>
     </>
   );
 }

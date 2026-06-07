@@ -1,6 +1,6 @@
 import "./Projects.scss";
 import ProjectCard from "../../entity/projects/ProjectCard.jsx";
-import { CardContainer } from "../../ui/assets/Card.jsx";
+import { CardContainer } from "../../ui/assets/ui/Card.jsx";
 
 function Projects() {
   return (
@@ -12,7 +12,12 @@ function Projects() {
             <ProjectCard>
               <p>Project 1</p>
             </ProjectCard>
-            <ProjectCard />
+            <ProjectCard>
+              <p>Project 2</p>
+            </ProjectCard>
+            <ProjectCard>
+              <p>Project 3</p>
+            </ProjectCard>
           </CardContainer>
           <div className="allProjectsButton">
             <a href="/marcoeportfolio/projects">All Projects</a>
