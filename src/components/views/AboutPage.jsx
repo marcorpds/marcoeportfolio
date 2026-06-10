@@ -1,12 +1,12 @@
-import About from "./sections/About";
+import Info from "./sections/Info";
 import Projects from "./sections/Projects";
 import Certificates from "./sections/Certificates";
 import Experience from "./sections/Experience";
 
-function Dashboard() {
+function AboutPage() {
   return (
     <>
-      <About />
+      <Info />
       <Projects />
       <Certificates />
       <Experience />
@@ -14,4 +14,4 @@ function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default AboutPage;

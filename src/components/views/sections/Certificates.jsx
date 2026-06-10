@@ -26,7 +26,7 @@ function Certificates() {
             </CertificatesCard>
           </CardContainer>
           <div className="allCertificatesButton">
-            <a href="/marcoeportfolio/certificates">All Certificates</a>
+            <a href="/marcoeportfolio/certificatespage">All Certificates</a>
           </div>
         </div>
       </div>

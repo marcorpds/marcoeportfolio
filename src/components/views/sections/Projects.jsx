@@ -20,7 +20,7 @@ function Projects() {
             </ProjectCard>
           </CardContainer>
           <div className="allProjectsButton">
-            <a href="/marcoeportfolio/projects">All Projects</a>
+            <a href="/marcoeportfolio/projectspage">All Projects</a>
           </div>
         </div>
       </div>

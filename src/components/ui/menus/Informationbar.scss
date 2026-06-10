@@ -1,24 +1,31 @@
 div.Informationbar {
   position: fixed;
-  top: 0;
   right: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   width: 200px;
   height: 100vh;
-  gap: 30px;
+  gap: 50px;
 
-  // Top and Bottom Lines
+  // Top and bottom lines
   .topLine,
   .bottomLine {
     background-color: #dcc48e;
     width: 5px;
-    height: 150px;
+    height: 300px;
     border-radius: 10px;
   }
 
-  // Menu Container
+  // Style for all vertical page titles
+  .pageTitle {
+    writing-mode: vertical-rl;
+    color: #dcc48e;
+    white-space: nowrap;
+  }
+
+  // Menu container
   .menu {
     flex: 1;
     display: flex;
@@ -27,7 +34,7 @@ div.Informationbar {
     align-items: center;
     gap: 20px;
 
-    // Shared Style for ALL Social Icons
+    // Style for all social icons
     .socialIcon a {
       display: flex;
       align-items: center;
@@ -44,7 +51,7 @@ div.Informationbar {
       transition: all 0.3s ease;
     }
 
-    // Hover Animation
+    // Hover animation
     .socialIcon a:hover {
       transform: translateY(-2px) scale(1.05);
       background-color: rgba(220, 196, 142, 0.12);
@@ -56,9 +63,8 @@ div.Informationbar {
       transform: scale(1.05);
     }
 
-    // Hover Icon Swaps
+    // Hover icon swaps
     .linkedin a:hover img {
-      
       content: url("../assets/icons/linkedin/linkedin-svgrepo-comb1.svg");
     }
 

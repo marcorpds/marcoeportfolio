@@ -8,16 +8,13 @@ function Navbar() {
         <div className="topLine" />
         <nav>
           <div className="navItem">
-            <NavLink to="/marcoeportfolio/dashboard">About</NavLink>
+            <NavLink to="/marcoeportfolio/aboutpage">About</NavLink>
           </div>
           <div className="navItem">
-            <NavLink to="/marcoeportfolio/projects">Projects</NavLink>
+            <NavLink to="/marcoeportfolio/projectspage">Projects</NavLink>
           </div>
           <div className="navItem">
-            <NavLink to="/marcoeportfolio/certificates">Certificates</NavLink>
-          </div>
-          <div className="navItem">
-            <NavLink to="/marcoeportfolio/experience">Experience</NavLink>
+            <NavLink to="/marcoeportfolio/certificatespage">Certificates</NavLink>
           </div>
         </nav>
         <div className="bottomLine" />
