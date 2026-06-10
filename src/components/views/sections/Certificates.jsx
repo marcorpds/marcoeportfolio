@@ -1,5 +1,5 @@
 import "./Certificates.scss";
-import CertificatesCard from "../../entity/certificates/CertificatesCard.jsx";
+import CertificatesCard from "../../entities/certificates/CertificatesCard.jsx";
 import { CardContainer } from "../../ui/assets/ui/Card.jsx";
 
 function Certificates() {

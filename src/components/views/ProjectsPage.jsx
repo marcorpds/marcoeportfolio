@@ -1,3 +1,5 @@
+import Header from "../ui/"
+
 function ProjectsPage() {
   return (
     <>
