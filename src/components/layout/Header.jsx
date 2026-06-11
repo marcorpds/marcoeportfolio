@@ -7,7 +7,6 @@ function Header() {
         <div className="yearTitle">Year</div>
         <div className="documentTitle">Projects</div>
         <div className="skillsTitle">Skills</div>
-        <div className="linksTitle">Links</div>
       </div>
     </>
   );

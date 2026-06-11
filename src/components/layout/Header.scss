@@ -1,8 +1,8 @@
 div.header {
-
   background-color: #27233a;
   display: flex;
   flex-direction: row;
+  gap: 20px;
   height: 80px;
   position: fixed;
   align-items: end;
@@ -10,22 +10,21 @@ div.header {
   right: 220px;
   padding: 10px;
   box-sizing: border-box;
-  text-align: center;
   color: #EAEFD3;
 
   .yearTitle {
     flex: 1;
+    text-align: center;
+    min-width: 60px;
   }
 
   .documentTitle {
+    min-width: 120px;
     flex: 3;
   }
 
   .skillsTitle {
-    flex: 4;
-  }
-
-  .linksTitle {
+    min-width: 140px;
     flex: 4;
   }
 }
