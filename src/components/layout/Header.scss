@@ -1,0 +1,31 @@
+div.header {
+
+  background-color: #27233a;
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  position: fixed;
+  align-items: end;
+  left: 220px;
+  right: 220px;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #EAEFD3;
+
+  .yearTitle {
+    flex: 1;
+  }
+
+  .documentTitle {
+    flex: 3;
+  }
+
+  .skillsTitle {
+    flex: 4;
+  }
+
+  .linksTitle {
+    flex: 4;
+  }
+}

@@ -1,6 +1,6 @@
 import "./Projects.scss";
 import ProjectCard from "../../entities/projects/ProjectCard.jsx";
-import { CardContainer } from "../../ui/assets/ui/Card.jsx";
+import { CardContainer } from "../../assets/ui/Card.jsx";
 
 function Projects() {
   return (

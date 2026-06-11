@@ -1,6 +1,6 @@
 import "./Experience.scss";
 import ExperienceCard from "../../entities/experience/ExperienceCard.jsx";
-import { CardContainer } from "../../ui/assets/ui/Card.jsx";
+import { CardContainer } from "../../assets/ui/Card.jsx";
 
 function Experience() {
   return (

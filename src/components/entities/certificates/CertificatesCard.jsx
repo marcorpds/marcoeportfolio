@@ -1,5 +1,5 @@
 import "./CertificatesCard.scss";
-import { Card } from "../../ui/assets/ui/Card.jsx";
+import { Card } from "../../assets/ui/Card.jsx";
 
 function CertificatesCard({ children }) {
   return (

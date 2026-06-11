@@ -16,5 +16,9 @@ div.mainLayout {
     flex: 1;
     margin-left: 220px;
     margin-right: 220px;
+
+    .pageContent {
+      margin-top: 80px;
+    }
   }
 }
