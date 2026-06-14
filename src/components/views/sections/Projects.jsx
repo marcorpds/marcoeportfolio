@@ -6,17 +6,50 @@ function Projects() {
   return (
     <>
       <div className="projects">
-        <div className="sectionTitle">Projects</div>
+        <div className="sectionTitle">FEATURED PROJECTS</div>
         <div className="projectsDisplay">
           <CardContainer>
             <ProjectCard>
-              <p>Project 1</p>
+              <img alt="project1image" src="./src/components/assets/images/react.svg" />
+              <div className="projectsCardInfo">
+                <div className="projectsCardTitle">
+                  <p>Project 1</p>
+                </div>
+                <div className="projectsCardDescription">
+                  <p>Some decription about the project</p>
+                </div>
+                <div className="projectsCardSkills">
+                  <p>Fill in with skills</p>
+                </div>
+              </div>
             </ProjectCard>
             <ProjectCard>
-              <p>Project 2</p>
+              <img alt="project1image" src="./src/components/assets/images/react.svg" />
+              <div className="projectsCardInfo">
+                <div className="projectsCardTitle">
+                  <p>Project 2</p>
+                </div>
+                <div className="projectsCardDescription">
+                  <p>Some decription about the project</p>
+                </div>
+                <div className="projectsCardSkills">
+                  <p>Fill in with skills</p>
+                </div>
+              </div>
             </ProjectCard>
             <ProjectCard>
-              <p>Project 3</p>
+              <img alt="project1image" src="./src/components/assets/images/react.svg" />
+              <div className="projectsCardInfo">
+                <div className="projectsCardTitle">
+                  <p>Project 3</p>
+                </div>
+                <div className="projectsCardDescription">
+                  <p>Some decription about the project</p>
+                </div>
+                <div className="projectsCardSkills">
+                  <p>Fill in with skills</p>
+                </div>
+              </div>
             </ProjectCard>
           </CardContainer>
           <div className="allProjectsButton">

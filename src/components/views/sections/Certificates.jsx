@@ -18,12 +18,6 @@ function Certificates() {
             <CertificatesCard>
               <p>Certificate 3</p>
             </CertificatesCard>
-            <CertificatesCard>
-              <p>Certificate 4</p>
-            </CertificatesCard>
-            <CertificatesCard>
-              <p>Certificate 5</p>
-            </CertificatesCard>
           </CardContainer>
           <div className="allCertificatesButton">
             <a href="/marcoeportfolio/certificatespage">All Certificates</a>

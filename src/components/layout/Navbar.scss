@@ -10,7 +10,7 @@ div.navbar {
   gap: 30px;
 
   .topLine {
-    background-color: #dcc48e;
+    background-color: #BB9457;
     width: 5px;
     height: 250px;
     border-radius: 10px;
@@ -23,8 +23,8 @@ div.navbar {
     justify-content: center;
 
     div.navItem .active {
-      background: #dcc48e;
-      color: black;
+      background: #23395B;
+      color: #BB9457;
     }
 
     div.navItem :hover {
@@ -32,7 +32,7 @@ div.navbar {
     }
 
     div.navItem a {
-      color: #dcc48e;
+      color: #8EA8C3;
       text-decoration: none;
       display: block;
       width: 100px;
@@ -46,7 +46,7 @@ div.navbar {
   }
 
   .bottomLine {
-    background-color: #dcc48e;
+    background-color: #BB9457;
     width: 5px;
     height: 250px;
     border-radius: 10px;

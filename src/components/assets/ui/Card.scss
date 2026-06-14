@@ -5,11 +5,8 @@ div.cardContainer {
   gap: 20px;
 
   div.card {
-    background-color: rgba(255, 255, 255, 0.321);
     padding: 10px;
-    border: 1.5px solid rgba(128, 128, 128, 0.749);
+    border: 2px solid #BB9457;
     border-radius: 10px;
-    box-shadow: 2px 2px 8px 2px rgba(70, 70, 70, 0.3);
-
   }
 }

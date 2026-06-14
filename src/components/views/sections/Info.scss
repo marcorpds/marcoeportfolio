@@ -1,10 +1,14 @@
 div.info {
   color: #c0c0c0;
   text-align: center;
+  margin-top: 80px;
+
+  .intro {
+    color: #BB9457;
+  }
 
   .name {
     font-size: 30px;
-    margin-top: 80px;
     color: #eaefd3;
   }
 

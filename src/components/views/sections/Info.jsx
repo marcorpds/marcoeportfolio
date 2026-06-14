@@ -4,6 +4,9 @@ function Info() {
   return (
     <>
       <div className="info">
+        <div className="intro">
+          <p>Hello, I'm</p>
+        </div>
         <div className="name">
           <p>Marco Pereira da Silva</p>
         </div>
