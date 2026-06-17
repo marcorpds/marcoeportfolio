@@ -1,0 +1,127 @@
+@use '../abstracts/variables' as *;
+
+.experience-panel {
+  padding: clamp(1.2rem, 3vw, 2.1rem);
+
+  .eyebrow {
+    margin-bottom: 1.4rem;
+  }
+}
+
+.timeline {
+  display: grid;
+  gap: 0.75rem;
+
+  .timeline-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 4.6rem minmax(0, 1fr);
+    gap: 0.85rem;
+    align-items: stretch;
+    min-height: 8rem;
+    padding: 1.15rem 1rem 1.15rem 2.2rem;
+    border: 1px solid $line-soft;
+    color: inherit;
+    transform: translateY(0);
+    transition:
+      background 180ms ease,
+      border-color 180ms ease,
+      box-shadow 180ms ease,
+      transform 180ms ease;
+
+    &:hover,
+    &:focus-visible {
+      border-color: rgba($blue, 0.9);
+      background: rgba($blue, 0.6);
+      box-shadow: 0 1rem 2.25rem rgba(0, 0, 0, 0.18);
+      transform: translateY(-0.12rem);
+    }
+
+    &:focus-visible {
+      outline: 2px solid $gold-bright;
+      outline-offset: 0.25rem;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 1rem;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background: $line;
+    }
+  }
+
+  time,
+  p,
+  strong {
+    color: $muted;
+    font-size: 0.86rem;
+  }
+
+  .timeline-date {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    align-self: start;
+    color: $gold-bright;
+    font-size: 0.79rem;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    span {
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+    }
+  }
+
+  .timeline-date__dash {
+    color: $muted;
+  }
+
+  .timeline-copy {
+    display: flex;
+    min-width: 0;
+    min-height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+
+    strong {
+      margin-bottom: 0.35rem;
+    }
+  }
+
+  h4,
+  p {
+    margin: 0;
+  }
+
+  h4 {
+    margin-bottom: 0.2rem;
+  }
+
+  .timeline-description {
+    max-width: 44rem;
+    margin-top: 0.55rem;
+    line-height: 1.55;
+  }
+
+  .tag-list {
+    justify-content: flex-start;
+    margin-top: auto;
+    padding-top: 0.75rem;
+  }
+}
+
+.timeline-pin {
+  position: absolute;
+  left: 0.68rem;
+  top: 1.6rem;
+  width: 0.7rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: $gold-bright;
+  box-shadow: 0 0 0 0.25rem rgba(214, 166, 93, 0.16);
+}

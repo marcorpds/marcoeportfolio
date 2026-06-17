@@ -1,24 +1,36 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import SideNav from './components/layout/SideNav.jsx';
+import SocialRail from './components/layout/SocialRail.jsx';
+import AboutSection from './sections/AboutSection.jsx';
+import ArchiveSection from './sections/ArchiveSection.jsx';
+import ExperienceSection from './sections/ExperienceSection.jsx';
+import ContactSection from './sections/ContactSection.jsx';
+import PageNotFound from './sections/PageNotFound.jsx';
+import { certificates, projects } from './data/portfolioData.js';
 
-import Layout from "./components/layout/Layout";
-import AboutPage from "./components/views/AboutPage";
-import ProjectsPage from "./components/views/ProjectsPage";
-import CertificatesPage from "./components/views/CertificatesPage";
-import PageNotFound from "./components/views/PageNotFound";
+const basePath = import.meta.env.BASE_URL.replace(/\/$/, '') || '/';
 
-function App() {
-  return (
-    <BrowserRouter>
-      <Layout>
-        <Routes>
-          <Route path="/marcoeportfolio/aboutpage" element={<AboutPage />} />
-          <Route path="/marcoeportfolio/projectspage" element={<ProjectsPage />} />
-          <Route path="/marcoeportfolio/certificatespage" element={<CertificatesPage />} />
-          <Route path="/marcoeportfolio/*" element={<PageNotFound />} />
-        </Routes>
-      </Layout>
-    </BrowserRouter>
-  );
+function isPortfolioPath() {
+  const path = window.location.pathname.replace(/\/$/, '') || '/';
+
+  return path === basePath || path === `${basePath}/index.html`;
 }
 
-export default App;
+export default function App() {
+  if (!isPortfolioPath()) {
+    return <PageNotFound />;
+  }
+
+  return (
+    <div className="portfolio-shell">
+      <SideNav />
+      <main className="content-frame">
+        <AboutSection />
+        <ArchiveSection id="projects" eyebrow="All Projects" title="Projects" items={projects} />
+        <ArchiveSection id="certificates" eyebrow="All Certificates" title="Certificates" items={certificates} />
+        <ExperienceSection />
+        <ContactSection />
+      </main>
+      <SocialRail />
+    </div>
+  );
+}
